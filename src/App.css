@@ -1,0 +1,99 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.listBg{
+    
+    background-color: whitesmoke;
+    border: 1px solid #0091b9;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 10px 140px 10px 15px;
+    text-align: left;
+    font-size: 22px;
+    position: relative;
+}
+
+.listBg div {
+    display: flex;
+    align-items: center;
+}
+
+.listNumber {
+    color: #0091b5;
+    border: 1px solid #0091b9;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.listBg .listText{
+   flex: 1;
+   color: #0091b5;
+   display: block;/* or inline-block */
+   text-overflow: ellipsis;
+   word-wrap: break-word;
+   overflow: hidden;
+   max-height: 5.6em;
+   line-height: 1.8em;
+    
+}
+.listBg .done .listText{
+   
+    text-decoration: line-through;
+    opacity: 0.3;
+    
+}
+
+.listBg .iconsWrap{
+    color: #0091b5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    display: inline-block;
+}
+
+.listBg .iconsWrap span {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    color: #00ff60;
+}
+
+.listBg .iconsWrap span:hover {
+    color:#0091b5;
+}
+
+.down{
+    transform: rotate(90deg);
+    color: white;
+}
+
+.ani-effect{
+    animation: ani 0.5s linear;
+}
+
+.slide-down{
+    animation: slideDown 0.5s linear;
+}
+
+@keyframes ani {
+    from{
+        opacity: 0.5;
+        transform: scale(0.8);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(-40px);
+    }to{
+        transform: translateY(0px);
+    }
+}
