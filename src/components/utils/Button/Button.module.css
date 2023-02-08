@@ -1,0 +1,41 @@
+.container {
+  width: 120px;
+  height: 50px;
+  border-radius: var(--borderRadius);
+  border: var(--borderStyle);
+  font-size: var(--fontSize);
+  font-weight: var(--fontBold);
+  text-align: center;
+}
+
+.container:hover {
+  border: var(--borderHover);
+  box-shadow: var(--btnShadow);
+}
+
+.btnPrimary {
+  background-color: var(--primaryColor);
+  color: var(--colorWhite);
+  border-color: transparent;
+}
+
+.btnCancel {
+  background-color: var(--colorWhite);
+  color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.btnDanger {
+  background-color: var(--colorDanger);
+  color: var(--colorWhite);
+  border-color: var(--colorDanger);
+}
+
+.btnDanger:hover{
+  border: var(--borderHover);
+  box-shadow: var(--btnDangerShadow);
+}
+
+.btnFull {
+  width: 650px;
+}

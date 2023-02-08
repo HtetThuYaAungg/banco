@@ -1,0 +1,21 @@
+.loginTitle {
+  text-align: center;
+  margin-top: -70px;
+  margin-bottom: 100px;
+}
+
+.sideContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sideContainer > div {
+  width: 100%;
+}
+
+.logoImgContainer img {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: contain;
+}

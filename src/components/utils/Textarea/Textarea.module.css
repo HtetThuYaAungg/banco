@@ -1,0 +1,14 @@
+.container {
+  width: 400px;
+  height: 135px;
+  border-radius: var(--borderRadius);
+  font-size: var(--inputFontSize);
+  padding: var(--paddingDefault);
+}
+
+.container:hover {
+  border: var(--borderHover);
+  box-shadow: var(--boxShadow);
+}
+
+

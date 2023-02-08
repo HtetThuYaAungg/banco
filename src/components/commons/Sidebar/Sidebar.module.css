@@ -1,0 +1,21 @@
+.dblock {
+  margin: 0;
+  padding: 30px;
+  min-width: 230px;
+  max-width: 300px;
+  background-color: #e2e2e2;
+  position: fixed;
+  height: 100%;
+
+}
+
+.dblock a {
+  display: block;
+  color: black;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.dblock a:hover {
+  color: purple;
+}

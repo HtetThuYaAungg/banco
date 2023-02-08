@@ -1,0 +1,21 @@
+.container {
+    min-height: 100vh;
+    background-color: var(--colorWhite);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lbloop {
+    color: var(--colorPurple);
+    font-size: calc(2 * var(--fontSize));
+    text-align: center;
+    margin-top: var(--marginDefault);
+    padding: calc(2 * var(--paddingDefault));
+}
+
+.lblsorry {
+    color: var(--primaryColor);
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --fontSize: 16px;
+  --inputFontSize: 15px;
+  --fontFamily: "Roboto", sans-serif;
+
+  --fontBold: 700;
+  --fontBolder: 900;
+
+  --borderRadius: 5px;
+  --borderStyle: 1px solid #000;
+  --borderHover: 0px;
+
+  --primaryColor: #5900B3;
+  --colorDanger: #dc3545;
+  --colorWhite: #ffffff;
+  --colorlightgray: #D9D9D9;
+  --colorPurple: #7A00CC;
+
+  --marginDefault: 10px;
+
+  --paddingDefault: 10px;
+
+  --boxShadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  --btnShadow: 0 0 0 2px #1a8fdd, 0 3px 8px 0 #1a8fdd;
+  --btnDangerShadow: 0 0 0 2px #dc3545, 0 3px 8px 0 #dc3545;
+}

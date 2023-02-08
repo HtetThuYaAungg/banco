@@ -1,0 +1,43 @@
+@import url("./variable.css");
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: var(--fontSize);
+  font-family: var(--fontFamily) !important;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: purple;
+}
+
+#notSupportedScreen {
+  display: none;
+}
+
+#supportedScreen {
+  display: initial;
+}
+
+/* Unsupported screen */
+@media only screen and (max-width: 600px) {
+  #notSupportedScreen {
+    display: initial;
+  }
+
+  #supportedScreen {
+    display: none;
+  }
+}
+
+
