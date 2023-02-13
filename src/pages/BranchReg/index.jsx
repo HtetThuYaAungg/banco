@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Text from "../../components/utils/Text";
 import Label from '../../components/utils/Label';
 import styles from './branchReg.module.css';
@@ -10,8 +10,29 @@ import { BUTTON } from "../../constants/utils";
 import Textarea from '../../components/utils/Textarea';
 import Navbar from '../../components/commons/Navbar';
 import Template from '../../components/Template';
+import DataContext from '../../context/DataContext';
 
 const BranchReg = () => {
+
+  const { fetchError, setFetchError, setIsLoading ,branchList,setBranchList,API_URL} = useContext(DataContext);
+  useEffect(() => {
+    const fetchLists = async () => {
+      try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw Error("Did not receive expected data");
+        const listItems = await response.json();
+        setBranchList(listItems);
+        setFetchError(null);
+      } catch (err) {
+        setFetchError(err.message);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    setTimeout(() => fetchLists(), 2000);
+  }, [ branchList]);
+
   return (
     <>
     {/* <div className='container'>
@@ -151,19 +172,14 @@ const BranchReg = () => {
             
             </div>
             <div className="col-12 col-md-9 col-lg-6">
-              <Select style={{height:"40px",}}
-                id="bankName"
-                options={[
-                  {
-                    text: "Abank",
-                    value: "abank",
-                  },
-                  {
-                    text: "Kbz",
-                    value: "Kbz",
-                  },
-                ]}
-              />
+                <select style={{ height: "40px", }}
+                  id="bankName"
+                  className={`form-select ${styles.container}`}
+                >
+                  {branchList.map((list) => (
+                    <option>{list.name}</option>
+                  ))}
+              </select>
             </div>
           </div>
           

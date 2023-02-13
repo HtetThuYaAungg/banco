@@ -2,3 +2,7 @@
     margin-top: 100px;
     margin-left: 300px;
 }
+
+.bi .bi-trash3-fill:hover{
+    color: red
+    }

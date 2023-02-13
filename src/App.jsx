@@ -1,21 +1,17 @@
-import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/commons/Navbar";
 import "bootstrap-icons/font/bootstrap-icons.json";
-import Sidebar from "./components/commons/Sidebar";
 import Login from "./pages/Login";
-import UnsupportedScreen from "./pages/UnsupportedScreen";
-import BranchReg from './pages/BranchReg/index';
+import BranchReg from "./pages/BranchReg/index";
 import "./index.css";
-import FormDemo from "./demoTest/FormDemo";
-
+import Home from "./pages/HomePage";
+import CustomerRegister from "./pages/CustomerReg";
+import BankReg from "./pages/BankReg";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import  { DataProvider } from "./context/DataContext";
 
 function App() {
-  
-
   return (
     <>
-    
       {/* <section id="notSupportedScreen">
         <UnsupportedScreen />
       </section>
@@ -23,14 +19,20 @@ function App() {
         
         
       </section> */}
-      
-      
-
-     
 
       {/* <Login/> */}
-      
-      
+      <DataProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/home" element={<Home />} />
+
+            <Route path="/branch" element={<BranchReg />} />
+            <Route path="/customer" element={<CustomerRegister />} />
+            <Route path="/bank" element={<BankReg />} />
+          </Routes>
+        </BrowserRouter>
+      </DataProvider>
     </>
   );
 }

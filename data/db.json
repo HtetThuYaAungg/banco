@@ -1,19 +1,14 @@
 {
-    "admin":[
-        {
-            "id":1,
-            "name":"mg mg",
-            "password":12345
-        },
-        {
-            "id":1,
-            "name":"soe thu",
-            "password":23456
-        },
-        {
-            "id":2,
-            "name":"kyaw ko",
-            "password":34567
-        }
-    ]
+  "bank": [
+    {
+      "name": "Bb",
+      "phone": "22",
+      "id": 1
+    },
+    {
+      "name": "CC",
+      "phone": "33",
+      "id": 2
+    }
+  ]
 }
