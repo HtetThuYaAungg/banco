@@ -8,29 +8,27 @@ import { BUTTON } from "../../constants/utils";
 import styles from "./bankReg.module.css";
 import DataContext from "../../context/DataContext";
 import { Action } from "../../reducers/BankReducer";
-import apiRequest from "../../apiRequest";
-import axios from "axios";
+
 
 const BankReg = () => {
   const { dispatch, updateData, setUpdateData } =useContext(DataContext);
   const [bankName, setBankName] = useState("");
   const [bankPhone, setBankPhone] = useState("");
   const [sendRequest, setSendRequest] = useState(false);
-  const API_URL = "http://localhost:3500/bank";
-
+ 
   const navigate = useNavigate();
 
   useEffect(() => {
     if (sendRequest) {
       navigate("/home");
     }
-  }, [sendRequest]);
+  }, );
 
   useEffect(() => {
     setTimeout(() => {
       setUpdateData('');
     }, 30000);
-  }, [updateData]);
+  }, );
  
 
   const submitHandler = (e) => {

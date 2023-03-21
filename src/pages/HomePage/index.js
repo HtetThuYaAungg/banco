@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Template from "../../components/Template";
 import styles from "./Home.module.css";
 import DataContext from "../../context/DataContext";
 import { Action, Action1, Action2 } from "../../reducers/BankReducer";
@@ -18,7 +17,7 @@ const HomePage = () => {
     if (sendRequest) {
       navigate("/bank");
     }
-  }, [sendRequest]);
+  }, );
 
 
 

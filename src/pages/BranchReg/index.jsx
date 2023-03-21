@@ -25,7 +25,7 @@ const BranchReg = () => {
     setTimeout(() => {
       setUpdateData1('');
     }, 30000);
-  }, [updateData1]);
+  },);
 
   const submitHandler = (e) => {
     e.preventDefault();

@@ -6,8 +6,7 @@ import Text from "../../components/utils/Text";
 import Label from "../../components/utils/Label";
 import Input from "../../components/utils/Input";
 import Image from "../../components/utils/Image";
-import Template from "../../components/Template";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
