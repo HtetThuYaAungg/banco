@@ -8,6 +8,7 @@ function Navbar({ isSidebarOpen, setIsSidebarOpen }) {
 
   return (
     <>
+      
       <div className={`${styles.container} d-flex justify-content-between`}>
         {isSidebarOpen ? (
           <i onClick={toggleNavbar} className="bi bi-text-indent-right"></i>

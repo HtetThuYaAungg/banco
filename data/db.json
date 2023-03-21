@@ -1,14 +1,38 @@
 {
   "bank": [
     {
-      "name": "Bb",
-      "phone": "22",
-      "id": 1
+      "id": 1676370050191,
+      "name": "AA",
+      "phone": "AA"
     },
     {
-      "name": "CC",
-      "phone": "33",
-      "id": 2
+      "id": 1676370114208,
+      "name": "BB",
+      "phone": "BB"
+    },
+    {
+      "type": "add-bank",
+      "bank": {
+        "id": 1676370239759,
+        "name": "zz",
+        "phone": "zz"
+      },
+      "id": 1676370114209
+    },
+    {
+      "type": "add-bank",
+      "bank": {
+        "id": 1676370239759,
+        "name": "zz",
+        "phone": "zz"
+      },
+      "id": 1676370114210
+    },
+    {
+      "id": 1676370279852,
+      "name": "dd",
+      "phone": "dd"
     }
-  ]
+  ],
+  "branch": []
 }

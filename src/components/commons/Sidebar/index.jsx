@@ -7,7 +7,7 @@ const Sidebar = () => {
   return (
     <>
       
-      <div className={`${styles.dblock} mt-5`}>
+      <div className={`${styles.dblock} mt-5 position-fixed`}>
         <div>
           <NavLink to="/customer">
             <i className="bi bi-person-bounding-box me-1"></i>

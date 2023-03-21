@@ -9,6 +9,8 @@
     border-radius: var(--borderRadius);
     font-size: var(--inputFontSize);
     padding: var(--paddingDefault);
+   initial-value: "ee";
+   
   }
   
   .container:hover {
@@ -16,3 +18,4 @@
     box-shadow: var(--boxShadow);
   }
   
+ 
