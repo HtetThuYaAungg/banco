@@ -72,7 +72,7 @@ const BranchReg = () => {
   return (
     <>
       <form action="" onSubmit={submitHandler} id="create" />
-      <Template>
+      <Template />
         {updateData1 ? (
           <div className="row position-fixed">
             <div className="col-2"></div>
@@ -347,7 +347,7 @@ const BranchReg = () => {
             </div>
           </div>
         )}
-      </Template>
+      
     </>
   );
 };

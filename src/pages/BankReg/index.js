@@ -70,7 +70,7 @@ const BankReg = () => {
   return (
     <>
       <form id="create" onSubmit={submitHandler}/>
-      <Template>
+      <Template />
         {updateData ? (
       
             <div className="row position-fixed">
@@ -233,7 +233,7 @@ const BankReg = () => {
               </div>
             </div>
         )}
-      </Template>
+     
     </>
   );
 };
